@@ -10,9 +10,6 @@ Firstly, it is important to note that the software included herein only provides
 not reflect the actual output of renewable energy. Secondly, it should also be noted that the software was developed very quickly
 and may still contain bugs that have yet to surface.
 
-Finally, we would like to thank the island community of Tiree for their valuable input in the design and development of this web
-application.
-
 
 Setup notes
 ===========
@@ -28,3 +25,12 @@ contain references that need to [CHANGE]:
 * tep_stub.php
 * js/core.js
 
+Thanks
+======
+
+Firstly, we would like to thank the island community of Tiree for their valuable input in the design and development of this web
+application.
+
+We would also like to use this space to point to all the libraries\tools\content that was used to make this web application. Below is a list of sources used to make this content.
+
+* TODO
