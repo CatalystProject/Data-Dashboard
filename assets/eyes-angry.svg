@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="50"
+   height="50"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-1002.3622)"
+     id="layer1">
+    <g
+       transform="translate(0.464125,-6)"
+       id="g3793">
+      <g
+         transform="translate(4,7.082988)"
+         id="g3765">
+        <path
+           d="m 8.5942344,1016.4896 c 2.5428936,5.0858 8.5125026,6.2248 8.5125026,6.2248"
+           id="path2993"
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+        <path
+           d="m 8.5533683,14.168322 c 0,0 0,5.779303 1.3870327,6.703991 1.387033,0.924689 6.031509,1.406864 7.245163,-0.326927"
+           transform="translate(0,1002.3622)"
+           id="path2995"
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+      <g
+         transform="matrix(-1,0,0,1,45.07175,7.082988)"
+         id="g3765-1">
+        <path
+           d="m 8.5942344,1016.4896 c 2.5428936,5.0858 8.5125026,6.2248 8.5125026,6.2248"
+           id="path2993-7"
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+        <path
+           d="m 8.5533683,14.168322 c 0,0 0,5.779303 1.3870327,6.703991 1.387033,0.924689 6.031509,1.406864 7.245163,-0.326927"
+           transform="translate(0,1002.3622)"
+           id="path2995-4"
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:miter;stroke-opacity:1" />
+      </g>
+    </g>
+  </g>
+</svg>

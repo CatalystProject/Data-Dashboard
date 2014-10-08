@@ -1,0 +1,14 @@
+html,body{
+	font-family: 'Lato', sans-serif;
+	color: #ffffff;
+	/*background-color: #ffffff;*/
+	margin:0;	
+	background: #414d63;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+
+.sub_canvas{
+	color: #ffffff;
+
+}

@@ -1,0 +1,16 @@
+html,body{
+	font-family: 'Lato', sans-serif;
+	color: #ffffff;
+	/*background-color: #ffffff;*/
+	margin:0;	
+	background-image: url("../assets/mobile-background.jpg");
+	background-color: #544937;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+
+
+.sub_canvas{
+	color: #ffffff;
+
+}
