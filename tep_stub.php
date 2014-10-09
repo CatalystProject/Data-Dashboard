@@ -25,12 +25,15 @@ $et_base_url = "http://www.earthtools.org/sun/";
 load_chores();
 	
 //call function name based on parameter in url supplied
+$arr = get_defined_functions();
+$user_func = $arr['user'];	
+	
+//call function name
 $function_name = $_GET['func'];
-if ( function_exists( $function_name )){
+if ( in_array( $function_name, $user_func) && function_exists( $function_name )){
 	call_user_func($function_name);
 }
 else{
-	//return error to caller
 	$params = array( "function" => $function_name );	
 	report_error( "Unable to call function.", $params);				
 }
