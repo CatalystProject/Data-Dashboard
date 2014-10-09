@@ -6,6 +6,9 @@ that contain this information. In addition, it caches the content received from 
 sources so that usage limits are not reached - as such, it should be relatively scalable.
 
 Author : Catalyst Project (Peter Newman)
+
+Edited by Will Simm:
+	Relocated to Lancaster University weather data and turbine
 */
 
 CONST TILLEY_MAX = 910;
@@ -16,7 +19,7 @@ $chores = array();
 $e44Curve = array(0, 0, 4, 20, 50, 96, 156, 238, 340, 466, 600, 710, 790, 850, 880, 905, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910);
 //[CHANGE]
 $api_key = "";
-$location_id = "";
+$location_id = "320301";
 
 $url = "http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json/$location_id?res=3hourly&key=$api_key";
 $et_base_url = "http://www.earthtools.org/sun/";
