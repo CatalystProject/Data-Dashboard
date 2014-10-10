@@ -11,15 +11,18 @@ Edited by Will Simm:
 	Relocated to Lancaster University weather data and turbine
 */
 
-CONST TILLEY_MAX = 910;
+CONST TILLEY_MAX = 2310; //max output of turbine
 CONST CHORE_SUITABILITY_THRESHOLD = 100;
 CONST CACHE_LIFE_SECONDS = 518400;//6 days
 $chores = array();
 //array containing kW produced by Enercon e44 wind turbine - e.g. at 5 Metres per second, this turbine will produce ~50KW
-$e44Curve = array(0, 0, 4, 20, 50, 96, 156, 238, 340, 466, 600, 710, 790, 850, 880, 905, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910);
+//from http://www.enercon.de/p/downloads/ENERCON_PU_en.pdf
+//$e44Curve = array(0, 0, 4, 20, 50, 96, 156, 238, 340, 466, 600, 710, 790, 850, 880, 905, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910, 910);
+$e70Curve = array(0,2,18,56,127,240,400,626,892,1223,1590,1900,2080,2230,2300,2310,2310,2310,2310,2310,2310,2310,2310,2310,2310);
+$turbineCurve = $e70Curve;
 //[CHANGE]
 $api_key = "";
-$location_id = "320301";
+$location_id = "320301"; // lancaster from  http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/xml/sitelist?res=daily&key=<key here>
 
 $url = "http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json/$location_id?res=3hourly&key=$api_key";
 $et_base_url = "http://www.earthtools.org/sun/";
@@ -100,7 +103,7 @@ class Chore {
 Function to generate message for ocelot to display - returns a json object containing a message and further details.
 */
 function ask_ocelot(){	
-	global $url, $e44Curve, $chores;
+	global $url, $turbineCurve, $chores;
 	//get current hour
 	$currentHour = date('H');
 	
@@ -153,10 +156,10 @@ function ask_ocelot(){
 	for( $i = 0;$i < count($storedPeriods); $i++){
 		//get windspeed in M/S (from Mph)
 		$windSpeed = round(intval($storedPeriods[$i]->S) * 0.44704 );
-		if ( $windSpeed > count($e44Curve) )
-				$windSpeed = count($e44Curve) - 1;
+		if ( $windSpeed > count($turbineCurve) )
+				$windSpeed = count($turbineCurve) - 1;
 								
-		$output = $e44Curve[$windSpeed];		
+		$output = $turbineCurve[$windSpeed];		
 		//check which day it is - today or tomorrow?
 		$time = $storedPeriods[$i]->{"$"};	
 		//package each reading into a reading object
